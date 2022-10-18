@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <script>
+        var horaInicio = Number(prompt("Insira a hora de início do jogo: "))
+        var horaFim = Number(prompt("Insira a hora do fim do jogo: "))
+        
+        if (horaInicio >= horaFim) {
+            var duraçao = 24 - horaInicio + horaFim
+        } else {
+            var duraçao = horaFim - horaInicio
+        }
+
+        console.log(`O jogo durou ${duraçao} horas!`)
+    </script>
+</body>
+</html>
